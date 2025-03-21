@@ -1,3 +1,4 @@
+import SocialShare from "@/app/components/SocialShare"
 import { posts } from "../../data/posts"
 
 export default function Post({ params }: { params: { id: string } }) {
@@ -10,6 +11,10 @@ export default function Post({ params }: { params: { id: string } }) {
         {post?.category}
       </span>
       <div className="font-mono text-lg leading-relaxed">{post?.content}</div>
+      <SocialShare
+        url={`https://yourdomain.com/post/${post?.id}`}
+        title={post?.title || ""}
+      />
     </article>
   )
 }
