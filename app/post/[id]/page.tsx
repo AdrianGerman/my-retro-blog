@@ -1,5 +1,6 @@
 import SocialShare from "@/app/components/SocialShare"
 import { posts } from "../../data/posts"
+import CommentSection from "@/app/components/CommentSection"
 
 export default function Post({ params }: { params: { id: string } }) {
   const post = posts.find((p) => p.id === Number.parseInt(params.id))
@@ -15,6 +16,7 @@ export default function Post({ params }: { params: { id: string } }) {
         url={`https://yourdomain.com/post/${post?.id}`}
         title={post?.title || ""}
       />
+      <CommentSection />
     </article>
   )
 }
