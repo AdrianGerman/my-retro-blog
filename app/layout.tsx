@@ -1,6 +1,7 @@
 import BlinkingCursor from "./components/BlinkingCursor"
 import ColorfulPixelLogo from "./components/ColorfulPixelLogo"
 import NavMenu from "./components/NavMenu"
+import ThemeToggle from "./components/ThemeToggle"
 import "./globals.css"
 import { Press_Start_2P, VT323 } from "next/font/google"
 
@@ -41,6 +42,9 @@ export default function RootLayout({
               Tech • Art • Finance <BlinkingCursor />
             </p>
             <NavMenu />
+            <div className="mt-4">
+              <ThemeToggle />
+            </div>
           </header>
           <main>{children}</main>
         </div>
