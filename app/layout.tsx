@@ -47,6 +47,9 @@ export default function RootLayout({
             </div>
           </header>
           <main>{children}</main>
+          <footer className="py-8 text-center font-mono">
+            © 2025 Pixel Wisdom. Created by AdrianGerman.
+          </footer>
         </div>
       </body>
     </html>
