@@ -1,9 +1,14 @@
-import SocialShare from "@/app/components/SocialShare"
+import { notFound } from "next/navigation"
 import { posts } from "../../data/posts"
+import SocialShare from "@/app/components/SocialShare"
 import CommentSection from "@/app/components/CommentSection"
 
 export default function Post({ params }: { params: { id: string } }) {
   const post = posts.find((p) => p.id === Number.parseInt(params.id))
+
+  if (!post) {
+    notFound()
+  }
 
   return (
     <article className="prose prose-invert prose-green max-w-none">
