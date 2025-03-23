@@ -3,6 +3,7 @@ import ColorfulPixelLogo from "./components/ColorfulPixelLogo"
 import FloatingPixels from "./components/FloatingPixels"
 import NavMenu from "./components/NavMenu"
 import PixelatedBackground from "./components/PixelatedBackground"
+import SoundEffect from "./components/SoundEffect"
 import ThemeToggle from "./components/ThemeToggle"
 import "./globals.css"
 import { Press_Start_2P, VT323 } from "next/font/google"
@@ -56,6 +57,7 @@ export default function RootLayout({
           </footer>
         </div>
         <FloatingPixels />
+        <SoundEffect />
       </body>
     </html>
   )
