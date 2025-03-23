@@ -1,6 +1,7 @@
 import BlinkingCursor from "./components/BlinkingCursor"
 import ColorfulPixelLogo from "./components/ColorfulPixelLogo"
 import NavMenu from "./components/NavMenu"
+import PixelatedBackground from "./components/PixelatedBackground"
 import ThemeToggle from "./components/ThemeToggle"
 import "./globals.css"
 import { Press_Start_2P, VT323 } from "next/font/google"
@@ -32,6 +33,8 @@ export default function RootLayout({
       <body
         className={`${pressStart2P.variable} ${vt323.variable} font-sans bg-gray-900 text-green-400 dark:bg-gray-900 dark:text-green-400`}
       >
+        <PixelatedBackground />
+
         <div className="max-w-4xl mx-auto px-4">
           <header className="py-8 flex flex-col items-center">
             <ColorfulPixelLogo />
