@@ -1,5 +1,6 @@
 import BlinkingCursor from "./components/BlinkingCursor"
 import ColorfulPixelLogo from "./components/ColorfulPixelLogo"
+import FloatingPixels from "./components/FloatingPixels"
 import NavMenu from "./components/NavMenu"
 import PixelatedBackground from "./components/PixelatedBackground"
 import ThemeToggle from "./components/ThemeToggle"
@@ -54,6 +55,7 @@ export default function RootLayout({
             © 2025 Pixel Wisdom. Created by AdrianGerman.
           </footer>
         </div>
+        <FloatingPixels />
       </body>
     </html>
   )
